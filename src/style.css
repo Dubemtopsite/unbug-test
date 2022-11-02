@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply text-gray-800;
+}
+
+.banner svg.svg-inline--fa{
+    font-size: 35px !important;
+    @apply text-purple-700 fill-purple-700;
+}
+
+.plans p{
+    font-size: 14px!important;
+}
