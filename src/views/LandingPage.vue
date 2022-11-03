@@ -24,7 +24,7 @@
             </div>
         </nav>
         <section style="min-height: 600px; padding-top: 60px;">
-            <div class="container mx-auto px-3 pt-24 md:pt-16 pb-0 md:pb-32">
+            <div class="container mx-auto px-3 pt-24 md:pt-16 pb-0 md:pb-24">
                 <div class="w-full max-w-max grid grid-cols-1 md:grid-cols-12">
                     <div class="flex flex-col items-start justify-center col-span-7 md:pr-10">
                         <div class="border-purple-700 pl-1 pr-4 py-1 border rounded-2xl text-purple-700 text-sm mb-5">
@@ -41,14 +41,15 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-span-5 flex justify-center mt-10 md:mt-0">
-                        <img src="@/assets/splash-screen.png" alt="" style="height: 500px;" />
+                    <div class="col-span-5 justify-center mt-10 md:mt-0 banner-container">
+                        <!-- <img src="@/assets/phone.png" alt="" /> -->
+                        <div></div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="bg-gray-50">
-            <div class="container mx-auto px-3 md:px-4 pt-12 md:pt-24 pb-24 flex flex-col items-center justify-center">
+            <div class="container mx-auto px-3 md:px-4 pt-12 md:pt-24 pb-12 md:pb-24 flex flex-col items-center justify-center">
                 <p class="text-center font-semibold">Official partner of these companies</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-12 gap-3 company">
                     <div class="flex justify-center flex-row mb-3">
@@ -107,12 +108,14 @@
                             <p>Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.</p>
                         </div>
                     </div>
-                    <div></div>
+                    <div>
+                        <img class="md:hidden mt-16 md:mt-0" src="@/assets/coinbase.webp" alt="">
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container mx-auto px-3 md:px-4 pt-12 md:pt-16 pb-0 md:pb-16 flex flex-col items-center justify-center">
+            <div class="container mx-auto px-3 md:px-4 pt-12 md:pt-16 pb-0 md:pb-12 flex flex-col items-center justify-center">
                 <div class="px-3 md:px-16 pt-12 md:pt-16 mb-24 md:mb-24 bg-purple-600 w-full rounded-xl grid grid-cols-1 md:grid-cols-2">
                     <div class="flex flex-col justify-center items-start">
                         <h5 class="text-3xl md:text-4xl text-white mb-3 font-semibold">Start your free trial</h5>
@@ -126,8 +129,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="flex justify-end mt-16 md:mt-0">
-                        <img src="@/assets/desktop.png" alt="" style="height: 300px;" />
+                    <div class="start-trail justify-end mt-10 md:mt-0">
+                        <div></div>
+                        <!-- <img src="@/assets/phone.png" alt="" style="height: 300px;" /> -->
                     </div>
                 </div>
             </div>
@@ -294,12 +298,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 pt-10 pb-0">
-                    <div>
+                <div class="flex flex-col-reverse md:flex-row  md:justify-between pt-10 pb-0">
+                    <div class="mt-5 md:mt-0">
                         <p class="text-gray-200">© 2077 Untitled UI. All rights reserved.</p>
                     </div>
-                    <div>
-
+                    <div class="inline-flex gap-5">
+                        <ul class="social-link">
+                            <li><img src="@/assets/002.png" alt=""></li>
+                        </ul>
+                        <ul class="social-link">
+                            <li><img src="@/assets/005.png" alt=""></li>
+                        </ul>
+                        <ul class="social-link">
+                            <li><img src="@/assets/033.png" alt=""></li>
+                        </ul>
+                        <ul class="social-link">
+                            <li><img src="@/assets/019.png" alt=""></li>
+                        </ul>
+                        <ul class="social-link">
+                            <li><img src="@/assets/023.png" alt=""></li>
+                        </ul>
+                        <ul class="social-link">
+                            <li><img src="@/assets/021.png" alt=""></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -318,9 +339,46 @@
 
 @media screen and (min-width: 768px) {
     .banner {
-        background: url('@/assets/banner-bg.png') center/35%;
+        background: url('@/assets/whatsapp.png') center/ 45%;
         background-repeat: no-repeat;
         background-position: 100% 70%;
     }   
+}
+.banner-container div{
+    background-size: auto 200%;
+    background-image: url('@/assets/phone.png');
+    height: 250px;
+    min-width: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.start-trail div{
+    background-size: auto 190%;
+    background-image: url('@/assets/phone.png');
+    height: 300px;
+    min-width: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+@media screen and (min-width: 768px) {
+    .banner-container div{
+        background-size: auto 100%;
+        min-height: 600px;
+        min-width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }   
+    .start-trail div{
+        background-size: auto 100%;
+        background-image: url('@/assets/whatsapp.png');
+        min-height: 400px;
+        min-width: auto;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+.social-link img{
+    width: 24px;
+    height: 24px;
 }
 </style>
