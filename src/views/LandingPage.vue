@@ -1,6 +1,6 @@
 <template>
     <div class="w-full min-h-screen bg-white">
-        <nav class="pt-5 pb-5 bg-white fixed w-full" style="">
+        <nav class="pt-3 pb-3 bg-white fixed w-full border-b border-gray-200" style="">
             <div class="container w-full mx-auto px-4 flex flex-row justify-between item-center">
                 <div class="flex flex-row space-x-6">
                     <div class="flex flex-row items-center">
@@ -233,7 +233,7 @@
             </div>
         </section>
         <section>
-            <div class="container mx-auto px-3 md:px-4 pt-12 md:pt-16 pb-16">
+            <div class="container mx-auto px-3 md:px-4 pt-12 md:pt-16 pb-0 mb:pb-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10">
                     <div>
                         <h2 class="text-3xl md:text-5xl mt-3 mb-4 md:mb-6 font-semibold">Be the first to know when we launch</h2>
@@ -246,8 +246,9 @@
 
                         <button class="bg-purple-700 py-3 px-6 text-white rounded-md w-full flex flex-row justify-center mt-4 md:hidden">Subscribe</button>
                     </div>
-                    <div>
-
+                    <div class="start-trail justify-end mt-10 md:mt-0">
+                        <div></div>
+                        <!-- <img src="@/assets/phone.png" alt="" style="height: 300px;" /> -->
                     </div>
                 </div>
             </div>
