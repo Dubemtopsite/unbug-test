@@ -6,6 +6,15 @@
     @apply text-gray-800;
 }
 
+.bg-purple-600, .bg-purple-700{
+    background: #53389E !important;
+}
+.text-purple-600, .text-purple-700{
+    color: #53389E !important;
+}
+.bg-purple-800{
+    background: #7F56D9;
+}
 .banner svg.svg-inline--fa{
     font-size: 35px !important;
     @apply text-purple-700 fill-purple-700;

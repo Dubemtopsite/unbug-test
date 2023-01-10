@@ -1,6 +1,6 @@
 <template>
     <div class="w-full min-h-screen bg-white">
-        <nav class="pt-3 pb-3 bg-white fixed w-full border-b border-gray-200" style="">
+        <nav class="pt-5 md:pt-3 pb-5 md:pb-3 bg-white fixed w-full border-b border-gray-200" style="">
             <div class="container w-full mx-auto px-4 flex flex-row justify-between item-center">
                 <div class="flex flex-row space-x-6">
                     <div class="flex flex-row items-center">
@@ -14,9 +14,9 @@
                         <li class="flex flex-row items-center">Pricing</li>
                     </ul>
                 </div>
-                <div class="space-x-5 hidden md:flex">
+                <div class="space-x-5 hidden md:flex md:flex-row items-center justify-end">
                     <router-link to="/" class="px-3 py-3">Log in</router-link>
-                    <router-link to="/" class="bg-purple-700 text-white px-5 py-1 text-sm rounded-lg flex flex-row items-center">Sign Up</router-link>
+                    <router-link to="/" class="bg-purple-700 text-white px-5 py-2.5 text-sm rounded-md flex flex-row items-center">Sign Up</router-link>
                 </div>
                 <button class="flex md:hidden">
                     <font-awesome-icon icon="fa-solid fa-bars" />
@@ -24,7 +24,7 @@
             </div>
         </nav>
         <section style="min-height: 600px; padding-top: 60px;">
-            <div class="container mx-auto px-3 pt-24 md:pt-16 pb-0 md:pb-24">
+            <div class="container mx-auto px-3 pt-16 md:pt-16 pb-0 md:pb-24">
                 <div class="w-full max-w-max grid grid-cols-1 md:grid-cols-12">
                     <div class="flex flex-col items-start justify-center col-span-7 md:pr-10">
                         <div class="border-purple-700 pl-1 pr-4 py-1 border rounded-2xl text-purple-700 text-sm mb-5">
@@ -74,7 +74,7 @@
             </div>
         </section>
         <section>
-            <div class="pt-12 md:pt-24 pb-24 banner">
+            <div class="pt-12 md:pt-24 pb-12 banner">
                 <div class="container mx-auto px-3 md:px-4 grid grid-cols-1 md:grid-cols-12">
                     <div class="col-span-7">
                         <p class="text-purple-700 font-semibold">Features</p>
@@ -115,11 +115,11 @@
             </div>
         </section>
         <section>
-            <div class="container mx-auto px-3 md:px-4 pt-12 md:pt-16 pb-0 md:pb-12 flex flex-col items-center justify-center">
+            <div class="container mx-auto px-3 md:px-4 pt-6 md:pt-16 pb-0 md:pb-12 flex flex-col items-center justify-center">
                 <div class="px-3 md:px-16 pt-12 md:pt-16 mb-24 md:mb-24 bg-purple-600 w-full rounded-xl grid grid-cols-1 md:grid-cols-2">
                     <div class="flex flex-col justify-center items-start">
                         <h5 class="text-3xl md:text-4xl text-white mb-3 font-semibold">Start your free trial</h5>
-                        <p class="text-white">Personal performance tracking made easy.</p>
+                        <p class="text-white text-lg">Personal performance tracking made easy.</p>
                         <div class="flex flex-row justify-start space-x-4 mt-9">
                             <a href="#">
                                 <img src="@/assets/apple-store.svg" alt="" style="height: 45px;" />
@@ -258,12 +258,12 @@
                 <div class="flex flex-col justify-center items-center pb-12 border-b border-b-gray-400">
                     <h5 class="text-2xl text-center md:text-3xl text-gray-200 mb-3 font-semibold">No long-term contracts. No catches. Simple.</h5>
                     <p class="text-gray-200 text-center">Start your 30-day free trial. Cancel anytime.</p>
-                    <div class="flex flex-col md:flex-row gap-2 justify-center mt-5 w-full">
-                        <button class="text-black text-sm font-semibold py-3 px-6 bg-gray-200 rounded-md gap-3 w-full md:w-auto">
+                    <div class="flex flex-col-reverse items-center md:flex-row gap-2 md:justify-center mt-5 w-full">
+                        <button class="text-black text-sm font-semibold py-4 px-6 bg-gray-200 rounded-md gap-3 w-full md:w-auto">
                             <font-awesome-icon icon="fa-regular fa-circle-play" />
                             View demo
                         </button>
-                        <button class="bg-purple-800 text-sm font-semibold py-3 px-6 text-gray-200 rounded-md w-full md:w-auto">Get started</button>
+                        <button class="bg-purple-800 text-sm font-semibold py-4 px-6 text-gray-200 rounded-md w-full md:w-auto">Get started</button>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-12 pt-10 pb-10 border-b border-b-gray-400">
